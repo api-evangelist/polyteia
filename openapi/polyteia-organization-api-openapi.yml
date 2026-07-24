@@ -1,0 +1,299 @@
+openapi: 3.1.0
+info:
+  title: Polyteia Platform Dataset Organization API
+  version: 3.1.4
+  description: 'Polyteia is a data platform for the German/European public sector. The platform can be fully driven through an RPC-style API: a single endpoint that accepts `command` (create/update/delete) and `query` (read) calls against Organizations, Workspaces, Solutions and Datasets. Authentication uses a Personal Access Key (PAK) presented as a Bearer token. All requests are POST to the single endpoint and return HTTP 200 with either a `data` or an `error` object (except auth failures, which return 401).
+
+    '
+  contact:
+    name: Polyteia Support
+    url: https://www.polyteia.com/about/contact
+    email: security@polyteia.de
+  termsOfService: https://www.polyteia.com/imprint
+  x-api-style: rpc
+servers:
+- url: https://app.polyteia.com
+  description: Production
+security:
+- PersonalAccessKey: []
+tags:
+- name: Organization
+paths:
+  /api:
+    post:
+      operationId: invoke
+      summary: Invoke an RPC command or query
+      description: 'Single RPC entrypoint. The request body carries exactly one of `command` (a mutation) or `query` (a read), together with `params`. See `x-rpc-methods` on the document root for the full list of supported commands and queries and their parameters.
+
+        '
+      tags:
+      - Organization
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RpcRequest'
+            examples:
+              create_dataset:
+                summary: Command — create a dataset
+                value:
+                  command: create_dataset
+                  params:
+                    name: Customers List
+                    solution_id: sol_cv33u4n0i6q45p93i930
+                    description: Customers list
+                    source: https://example.com/dataset.csv
+                    slug: customers_list
+              get_dataset:
+                summary: Query — read a dataset by id
+                value:
+                  query: get_dataset
+                  params:
+                    id: ds_cv4t2cf0i6q1gflvu4m0
+              list_datasets:
+                summary: Query — list datasets in a solution
+                value:
+                  query: list_datasets
+                  params:
+                    page: 1
+                    size: 10
+                    solution_id: sol_cv33u4n0i6q45p93i930
+      responses:
+        '200':
+          description: 'RPC result. Always returned for both success and business errors; inspect the body for `data` (success) or `error` (failure).
+
+            '
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RpcResponse'
+        '401':
+          description: Unauthorized — invalid or missing Personal Access Key.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: HTTP-style error code (400/401/403/404/500).
+          examples:
+          - 500
+        message:
+          type: string
+          examples:
+          - internal error
+        details:
+          type: array
+          items: {}
+      required:
+      - code
+      - message
+    ErrorEnvelope:
+      type: object
+      properties:
+        error:
+          $ref: '#/components/schemas/Error'
+    RpcRequest:
+      type: object
+      description: An RPC request carrying exactly one of `command` or `query`.
+      properties:
+        command:
+          type: string
+          description: The command (mutation) to execute.
+          enum:
+          - create_workspace
+          - update_workspace
+          - delete_workspace
+          - create_solution
+          - update_solution
+          - delete_solution
+          - create_dataset
+          - update_dataset
+          - delete_dataset
+        query:
+          type: string
+          description: The query (read) to execute.
+          enum:
+          - get_organization
+          - list_organizations
+          - get_workspace
+          - list_workspaces
+          - get_solution
+          - list_solutions
+          - get_dataset
+          - list_datasets
+        params:
+          type: object
+          description: Parameters for the command or query.
+          additionalProperties: true
+      required:
+      - params
+    RpcResponse:
+      type: object
+      description: Standard RPC response — exactly one of `data` or `error` is present.
+      properties:
+        data:
+          description: Present on success.
+        error:
+          $ref: '#/components/schemas/Error'
+  securitySchemes:
+    PersonalAccessKey:
+      type: http
+      scheme: bearer
+      bearerFormat: PAK
+      description: 'Personal Access Key (PAK). A PAK impersonates the issuing account and carries that account''s permissions. Presented as `Authorization: Bearer <PAK>`.
+
+        '
+x-rpc-methods:
+- name: get_organization
+  type: query
+  tag: Organization
+  summary: Read an organization by id.
+  params:
+  - id
+  returns: Organization
+- name: list_organizations
+  type: query
+  tag: Organization
+  summary: List organizations the caller can access (paginated).
+  params:
+  - page
+  - size
+  returns: Organization[]
+- name: get_workspace
+  type: query
+  tag: Workspace
+  summary: Read a workspace by id.
+  params:
+  - id
+  returns: Workspace
+- name: list_workspaces
+  type: query
+  tag: Workspace
+  summary: List workspaces (paginated).
+  params:
+  - page
+  - size
+  returns: Workspace[]
+- name: create_workspace
+  type: command
+  tag: Workspace
+  summary: Create a workspace in an organization.
+  params:
+  - organization_id
+  - name
+  - description
+  - attributes
+  returns: Workspace
+- name: update_workspace
+  type: command
+  tag: Workspace
+  summary: Update a workspace.
+  params:
+  - id
+  - name
+  - description
+  - attributes
+  returns: Workspace
+- name: delete_workspace
+  type: command
+  tag: Workspace
+  summary: Delete a workspace.
+  params:
+  - id
+- name: get_solution
+  type: query
+  tag: Solution
+  summary: Read a solution by id.
+  params:
+  - id
+  returns: Solution
+- name: list_solutions
+  type: query
+  tag: Solution
+  summary: List solutions (paginated).
+  params:
+  - page
+  - size
+  returns: Solution[]
+- name: create_solution
+  type: command
+  tag: Solution
+  summary: Create a solution in a workspace.
+  params:
+  - organization_id
+  - workspace_id
+  - name
+  - description
+  - attributes
+  - documentation
+  returns: Solution
+- name: update_solution
+  type: command
+  tag: Solution
+  summary: Update a solution.
+  params:
+  - id
+  - name
+  - description
+  - attributes
+  - documentation
+  returns: Solution
+- name: delete_solution
+  type: command
+  tag: Solution
+  summary: Delete a solution.
+  params:
+  - id
+- name: get_dataset
+  type: query
+  tag: Dataset
+  summary: Read a dataset by id, or by solution_id + slug.
+  params:
+  - id
+  - solution_id
+  - slug
+  returns: Dataset
+- name: list_datasets
+  type: query
+  tag: Dataset
+  summary: List datasets in a solution (paginated).
+  params:
+  - page
+  - size
+  - solution_id
+  returns: Dataset[]
+- name: create_dataset
+  type: command
+  tag: Dataset
+  summary: Create a dataset in a solution.
+  params:
+  - name
+  - solution_id
+  - description
+  - source
+  - slug
+  returns: Dataset
+- name: update_dataset
+  type: command
+  tag: Dataset
+  summary: Update a dataset.
+  params:
+  - id
+  - name
+  - description
+  - source
+  - slug
+  returns: Dataset
+- name: delete_dataset
+  type: command
+  tag: Dataset
+  summary: Delete a dataset.
+  params:
+  - id
