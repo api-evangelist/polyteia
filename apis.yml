@@ -1,24 +1,204 @@
 aid: polyteia
 name: Polyteia
-description: 'Polyteia is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai-enterprise-software. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Polyteia is a Berlin-based govtech company offering a data platform for the
+  German and European public sector. It lets public administrations connect
+  existing systems, harmonize fragmented data, and use it in AI-supported
+  workflows for forms, case processing, statistical evaluation, and reporting.
+  The platform ships pre-built Solutions for common public-sector use cases
+  (social-service planning, budget controlling, crisis response, kindergarten
+  demand forecasting) plus a no-code/low-code Studio. It serves 80+ government
+  entities in Germany, including the states of Schleswig-Holstein and Saarland.
+  The platform is fully driveable through an RPC-style API (command/query over a
+  single POST endpoint) authenticated with Personal Access Keys, backed by a
+  Trust Center and GDPR/BSI/C5 compliance. Founded by Faruk Tuncer, Taisia
+  Antonova, and Lukas Rambold; backed by HV Capital and DvH Ventures.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/64f07393c02984e046baf5f8/6833060d76c3b033ca002dff_Social%20Sharing.png
 url: https://raw.githubusercontent.com/api-evangelist/polyteia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hv-capital
-x-tier: stub
+- dvh-ventures
+x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai Enterprise Software
-apis: []
+- GovTech
+- Public Sector
+- Data Platform
+- Government
+- Data Analytics
+- Germany
+- Business Intelligence
+- No-Code
+apis:
+- aid: polyteia:polyteia-dataset-api
+  name: Polyteia Dataset API
+  description: The Dataset API from Polyteia — 1 operation(s) for dataset.
+  humanURL: https://docs.polyteia.com/api-docs
+  baseURL: https://app.polyteia.com/api
+  tags:
+  - Dataset
+  properties:
+  - type: OpenAPI
+    url: openapi/polyteia-dataset-api-openapi.yml
+  - type: Documentation
+    url: https://docs.polyteia.com/api-docs
+  - type: Authentication
+    url: authentication/polyteia-authentication.yml
+  - type: ErrorCatalog
+    url: errors/polyteia-problem-types.yml
+  - type: Conventions
+    url: conventions/polyteia-conventions.yml
+  - type: DataModel
+    url: data-model/polyteia-data-model.yml
+  - type: AgenticAccess
+    url: agentic-access/polyteia-agentic-access.yml
+- aid: polyteia:polyteia-organization-api
+  name: Polyteia Organization API
+  description: The Organization API from Polyteia — 1 operation(s) for organization.
+  humanURL: https://docs.polyteia.com/api-docs
+  baseURL: https://app.polyteia.com/api
+  tags:
+  - Organization
+  properties:
+  - type: OpenAPI
+    url: openapi/polyteia-organization-api-openapi.yml
+  - type: Documentation
+    url: https://docs.polyteia.com/api-docs
+  - type: Authentication
+    url: authentication/polyteia-authentication.yml
+  - type: ErrorCatalog
+    url: errors/polyteia-problem-types.yml
+  - type: Conventions
+    url: conventions/polyteia-conventions.yml
+  - type: DataModel
+    url: data-model/polyteia-data-model.yml
+  - type: AgenticAccess
+    url: agentic-access/polyteia-agentic-access.yml
+- aid: polyteia:polyteia-solution-api
+  name: Polyteia Solution API
+  description: The Solution API from Polyteia — 1 operation(s) for solution.
+  humanURL: https://docs.polyteia.com/api-docs
+  baseURL: https://app.polyteia.com/api
+  tags:
+  - Solution
+  properties:
+  - type: OpenAPI
+    url: openapi/polyteia-solution-api-openapi.yml
+  - type: Documentation
+    url: https://docs.polyteia.com/api-docs
+  - type: Authentication
+    url: authentication/polyteia-authentication.yml
+  - type: ErrorCatalog
+    url: errors/polyteia-problem-types.yml
+  - type: Conventions
+    url: conventions/polyteia-conventions.yml
+  - type: DataModel
+    url: data-model/polyteia-data-model.yml
+  - type: AgenticAccess
+    url: agentic-access/polyteia-agentic-access.yml
+- aid: polyteia:polyteia-workspace-api
+  name: Polyteia Workspace API
+  description: The Workspace API from Polyteia — 1 operation(s) for workspace.
+  humanURL: https://docs.polyteia.com/api-docs
+  baseURL: https://app.polyteia.com/api
+  tags:
+  - Workspace
+  properties:
+  - type: OpenAPI
+    url: openapi/polyteia-workspace-api-openapi.yml
+  - type: Documentation
+    url: https://docs.polyteia.com/api-docs
+  - type: Authentication
+    url: authentication/polyteia-authentication.yml
+  - type: ErrorCatalog
+    url: errors/polyteia-problem-types.yml
+  - type: Conventions
+    url: conventions/polyteia-conventions.yml
+  - type: DataModel
+    url: data-model/polyteia-data-model.yml
+  - type: AgenticAccess
+    url: agentic-access/polyteia-agentic-access.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DeveloperPortal
+  url: https://docs.polyteia.com/
+- type: Documentation
+  url: https://docs.polyteia.com/api-docs
+- type: APIReference
+  url: https://docs.polyteia.com/api-docs/en/readme.md
+- type: GettingStarted
+  url: https://docs.polyteia.com/readme/erste-schritte.md
+- type: Authentication
+  url: authentication/polyteia-authentication.yml
+- type: SignUp
+  url: https://app.polyteia.com/
+- type: Pricing
+  url: https://www.polyteia.com/pricing
+- type: TermsOfService
+  url: https://www.polyteia.com/imprint
+- type: PrivacyPolicy
+  url: https://www.polyteia.com/privacy-policy
+- type: Support
+  url: https://www.polyteia.com/services/customer-support
+- type: Blog
+  url: https://www.polyteia.com/about/news
+- type: ChangeLog
+  url: changelog/polyteia-changelog.yml
+- type: MCPServer
+  url: mcp/polyteia-mcp.yml
+- type: LLMsTxt
+  url: llms/polyteia-llms.txt
+- type: Conventions
+  url: conventions/polyteia-conventions.yml
+- type: ErrorCatalog
+  url: errors/polyteia-problem-types.yml
+- type: DataModel
+  url: data-model/polyteia-data-model.yml
+- type: Lifecycle
+  url: lifecycle/polyteia-lifecycle.yml
+- type: Overlay
+  url: overlays/polyteia-platform-overlay.yaml
+- type: Conformance
+  url: conformance/polyteia-conformance.yml
+- type: Compliance
+  url: https://trustcenter.polyteia.com/
+- type: TrustCenter
+  url: security/polyteia-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/polyteia-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.polyteia.com/resources/data-security
+- type: DomainSecurity
+  url: security/polyteia-domain-security.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: AgenticAccess
+  url: agentic-access/polyteia-agentic-access.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 16
+  pass: local-v1

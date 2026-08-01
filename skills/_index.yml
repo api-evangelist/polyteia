@@ -1,0 +1,11 @@
+generated: '2026-07-20'
+method: generated
+skills:
+  - file: polyteia-provision-solution-and-dataset.md
+    name: Provision a Polyteia solution and load a dataset
+    api: openapi/polyteia-platform-openapi.yml
+    operations: [create_workspace, create_solution, create_dataset]
+  - file: polyteia-find-and-read-dataset.md
+    name: Find and read a Polyteia dataset
+    api: openapi/polyteia-platform-openapi.yml
+    operations: [list_organizations, list_workspaces, list_solutions, list_datasets, get_dataset]

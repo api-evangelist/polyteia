@@ -1,0 +1,20 @@
+{
+  "provider": "polyteia",
+  "sources": [
+    "polyteia-dataset-api-openapi.yml",
+    "polyteia-organization-api-openapi.yml",
+    "polyteia-solution-api-openapi.yml",
+    "polyteia-workspace-api-openapi.yml"
+  ],
+  "outputs": [
+    "polyteia-dataset-api-openapi.yml",
+    "polyteia-organization-api-openapi.yml",
+    "polyteia-solution-api-openapi.yml",
+    "polyteia-workspace-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/polyteia-platform-openapi.yml
+notes: >
+  Entity graph derived from the documented RPC response shapes. Polyteia resources
+  form a strict containment hierarchy: an Organization contains Workspaces, a
+  Workspace contains Solutions, and a Solution contains Datasets. Parentage is
+  carried by *_id reference fields on each resource. Id prefixes are stable and
+  type-tagged.
+entities:
+  - name: Organization
+    id_prefix: org_
+    fields: [id, created_at, updated_at, name, description, slug]
+  - name: Workspace
+    id_prefix: ws_
+    fields: [id, organization_id, created_at, updated_at, name, description, attributes]
+  - name: Solution
+    id_prefix: sol_
+    fields: [id, organization_id, workspace_id, created_at, updated_at, name, description, attributes, documentation]
+  - name: Dataset
+    id_prefix: ds_
+    fields: [id, organization_id, solution_id, name, slug, description, source, created_at, updated_at, documentation, metadata]
+relationships:
+  - from: Organization
+    to: Workspace
+    type: has_many
+    via: organization_id
+  - from: Workspace
+    to: Organization
+    type: belongs_to
+    via: organization_id
+  - from: Workspace
+    to: Solution
+    type: has_many
+    via: workspace_id
+  - from: Solution
+    to: Workspace
+    type: belongs_to
+    via: workspace_id
+  - from: Solution
+    to: Organization
+    type: belongs_to
+    via: organization_id
+  - from: Solution
+    to: Dataset
+    type: has_many
+    via: solution_id
+  - from: Dataset
+    to: Solution
+    type: belongs_to
+    via: solution_id
+  - from: Dataset
+    to: Organization
+    type: belongs_to
+    via: organization_id

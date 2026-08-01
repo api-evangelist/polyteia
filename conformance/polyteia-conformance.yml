@@ -1,0 +1,51 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.polyteia.com/resources/data-security
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: API uses Personal Access Key bearer tokens, not OAuth2 flows.
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a custom `error` envelope (code/message/details), not application/problem+json.
+  - id: json-api
+    conforms: false
+  - id: rest
+    conforms: false
+    evidence: Platform is explicitly RPC (command/query over a single POST endpoint), not REST.
+  - id: pagination
+    conforms: true
+    evidence: page/size request params; total/page/size/items response envelope on list queries.
+  - id: idempotency
+    conforms: false
+    evidence: No idempotency key documented.
+  - id: gdpr
+    conforms: true
+    evidence: GDPR compliance stated; DPA available via Trust Center; EU-only data residency.
+  - id: bsi-it-grundschutz
+    conforms: true
+    evidence: IT security concept maintained per German BSI IT-Grundschutz.
+  - id: bsi-c5
+    conforms: true
+    evidence: Data processed/stored in BSI-C5-certified EU data centers.
+  - id: iso-27001
+    conforms: partial
+    evidence: ISO 27001 certification stated as in progress (data-security page).
+compliance:
+  program_url: https://trustcenter.polyteia.com/
+  data_security_url: https://www.polyteia.com/resources/data-security
+  certifications:
+    - GDPR
+    - BSI IT-Grundschutz
+    - BSI C5 (data center)
+    - ISO 27001 (in progress)
+  encryption:
+    at_rest: AES-256
+    in_transit: TLS 1.2+
+  practices:
+    - Continuous vulnerability scanning (infrastructure + application)
+    - Regular independent penetration testing
+    - Role-based access control
+    - EU-only data residency (headquarters + servers within the EU)

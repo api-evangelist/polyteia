@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+host: https://app.polyteia.com
+notes: >
+  app.polyteia.com is a client-rendered single-page app that returns HTTP 200 with
+  the SPA HTML shell for ANY path, including /.well-known/*. The 200s below are
+  therefore NOT valid discovery documents (no security.txt, OIDC, or OAuth
+  metadata is actually served); they are recorded as spa_shell so a later run does
+  not mistake them for real artifacts. docs.polyteia.com and www.polyteia.com
+  return real 404s for all probed paths.
+documents:
+  - path: /.well-known/security.txt
+    host: app.polyteia.com
+    status: 200
+    spa_shell: true
+    file: null
+  - path: /.well-known/openid-configuration
+    host: app.polyteia.com
+    status: 200
+    spa_shell: true
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    host: app.polyteia.com
+    status: 200
+    spa_shell: true
+    file: null
+  - path: /.well-known/api-catalog
+    host: app.polyteia.com
+    status: 200
+    spa_shell: true
+    file: null
+  - path: /.well-known/ai-plugin.json
+    host: app.polyteia.com
+    status: 200
+    spa_shell: true
+    file: null
+  - path: /.well-known/security.txt
+    host: docs.polyteia.com
+    status: 404
+  - path: /.well-known/security.txt
+    host: www.polyteia.com
+    status: 404

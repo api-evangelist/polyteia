@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.polyteia.com/api-docs/en/readme.md
+format: custom
+envelope:
+  field: error
+  shape: { code: integer, message: string, details: array }
+  example:
+    error:
+      code: 500
+      message: internal error
+      details: []
+notes: >
+  Polyteia does not use RFC 9457 problem+json. Errors are returned in a custom
+  `error` envelope. The response HTTP status is 200 for business errors (the
+  numeric `error.code` mirrors HTTP semantics) except authentication failures,
+  which return HTTP 401.
+problems:
+  - code: 400
+    title: Bad Request
+    meaning: The request was malformed or invalid (e.g. missing/invalid params).
+  - code: 401
+    title: Unauthorized
+    meaning: Authentication is required or the Personal Access Key is invalid/missing.
+    http_status: 401
+  - code: 403
+    title: Forbidden
+    meaning: The request was understood but the account/PAK lacks permission for the resource.
+  - code: 404
+    title: Not Found
+    meaning: The requested resource does not exist.
+  - code: 500
+    title: Internal Server Error
+    meaning: An error occurred on the server.

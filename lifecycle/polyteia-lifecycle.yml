@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.polyteia.com/
+versioning:
+  api_scheme: none-documented
+  product_scheme: semver
+  current_product_version: '3.1.4'
+  changelog: changelog/polyteia-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No public API deprecation policy or RFC 8594 Sunset/Deprecation header support was found.
+sla:
+  url: null
+  uptime_target: null
+  notes: No public SLA/uptime target published (EVB-IT service contracts referenced via Trust Center for public-sector customers).
+status_page: null
+status_page_notes: No public status page found as of 2026-07-20.
+deprecated_operations: []

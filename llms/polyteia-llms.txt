@@ -1,0 +1,153 @@
+# Polyteia Docs
+
+## Plattform
+
+- [Willkommen bei Polyteia](https://docs.polyteia.com/readme.md)
+- [Erste Schritte](https://docs.polyteia.com/readme/erste-schritte.md): Legen Sie mit der Polyteia-Plattform los.
+- [Anmelden](https://docs.polyteia.com/readme/anmelden.md): Einfach über das Internet per Web-Browser in der Polyteia-Plattform anmelden.
+- [Konzepte](https://docs.polyteia.com/readme/konzepte.md): Erhalten Sie ein grundlegendes Verständnis der Struktur von Polyteia, damit Sie Ihren Arbeitsbereich und Lösungen einrichten, Ressourcen erstellen und effizient navigieren können.
+- [Neuigkeiten und Updates](https://docs.polyteia.com/neuigkeiten-und-updates.md): Hier finden Sie alle Neuigkeiten rund um die Polyteia-Plattform!
+- [Navigation](https://docs.polyteia.com/navigation.md)
+- [Seitenleiste](https://docs.polyteia.com/navigation/seitenleiste.md): Navigation innerhalb einer Lösung.
+- [Pfad-Navigation](https://docs.polyteia.com/navigation/pfad-navigation.md): Wissen, wo Sie gerade sind.
+- [Startseite](https://docs.polyteia.com/navigation/startseite.md): Ihr persönliches Dashboard in der Polyteia-Plattform.
+- [Ressourcen](https://docs.polyteia.com/navigation/ressourcen.md): Ressourcen innerhalb einer Lösung finden und verwalten.
+- [Suche](https://docs.polyteia.com/navigation/suche.md): Suchen Sie nach Ressourcen und Inhalten in der Polyteia-Plattform.
+- [Nutzerkonto](https://docs.polyteia.com/konto.md): Sicher in der Polyteia-Plattform authentifizieren
+- [Konto](https://docs.polyteia.com/konto/konto.md): Ihr Zugang zur Polyteia-Plattform.
+- [Profil](https://docs.polyteia.com/konto/profil.md): Ihre Rolle in einer Organisation der Polyteia-Plattform.
+- [Sicherheit und Zugang](https://docs.polyteia.com/konto/sicherheit-und-zugang.md): Kontosicherheit und Zugriff in der Polyteia-Plattform verwalten.
+- [Zugriffsschlüssel (PAK)](https://docs.polyteia.com/konto/zugriffsschlussel-pak.md): Mit PAKs über die Polyteia-API ohne Benutzername und Passwort authentifizieren.
+- [Benachrichtigungen](https://docs.polyteia.com/konto/benachrichtigungen.md): Benachrichtigungen über wichtige Updates in der Polyteia-Plattform erhalten.
+- [Organisationsverwaltung](https://docs.polyteia.com/organisationen.md): Verwalten Sie Mitglieder, Gruppen, Tags und Verbindungen.
+- [Allgemein](https://docs.polyteia.com/organisationen/allgemein.md): Ändern Sie Namen oder Beschreibung Ihrer Organisation.
+- [Mitglieder](https://docs.polyteia.com/organisationen/mitglieder.md): Mitglieder sind reguläre Nutzer in der Polyteia-Plattform.
+- [Gruppen](https://docs.polyteia.com/organisationen/gruppen.md): Organisieren Sie Nutzer in Gruppen.
+- [Tags](https://docs.polyteia.com/organisationen/tags.md): Ressourcen mit Tags ordnen und schnell wiederfinden.
+- [Nutzung und Kontingente](https://docs.polyteia.com/organisationen/nutzung-und-kontingente.md): Behalten Sie Nutzerlizenzen und Speicherverbrauch im Blick und reagieren Sie auf Warnungen.
+- [Abo-Verwaltung](https://docs.polyteia.com/organisationen/abo-verwaltung.md)
+- [Connect](https://docs.polyteia.com/organisationen/polyteia-connect.md): Arbeiten Sie mit anderen Organisationen in der Polyteia-Plattform zusammen.
+- [Arbeitsbereiche](https://docs.polyteia.com/arbeitsbereiche.md): Organisieren Sie Ihre Teammitglieder in Arbeitsbereichen.
+- [Lösungen](https://docs.polyteia.com/loesungen.md): Organisieren Sie Ihre Ressourcen fachspezifisch in Lösungen.
+- [Datensätze](https://docs.polyteia.com/datensaetze.md): Speichern, verwalten, erkunden und teilen Sie Daten in der Polyteia-Plattform.
+- [Datensatz erstellen](https://docs.polyteia.com/datensaetze/datensatz-erstellen.md): Erstellen Sie Datensätze in der Polyteia-Plattform, um sie in Ihrer Lösung zu nutzen.
+- [Datenvorschau](https://docs.polyteia.com/datensaetze/datenvorschau.md): Verschaffen Sie sich einen Überblick über die Daten in Spalten und Zeilen in der Polyteia Plattform.
+- [Daten hochladen](https://docs.polyteia.com/datensaetze/daten-hochladen.md): Laden Sie CSV-, Excel-, JSON- oder Parquet-Dateien in Ihren Datensatz in der Polyteia-Plattform hoch.
+- [Daten exportieren](https://docs.polyteia.com/datensaetze/daten-exportieren.md): Exportieren Sie Daten als CSV-, Excel-, JSON- oder Parquet-Dateien aus der Polyteia-Plattform.
+- [Daten löschen](https://docs.polyteia.com/datensaetze/daten-loeschen.md): Löschen Sie Daten aus einem Datensatz manuell oder automatisch nach Zeitplan.
+- [Datensatz verwalten](https://docs.polyteia.com/datensaetze/datensatz-verwalten.md): Verwalten Sie Ihren Datensatz in der Polyteia-Plattform.
+- [Daten hochladen via API](https://docs.polyteia.com/datensaetze/daten-hochladen-via-api.md)
+- [Datentabellen](https://docs.polyteia.com/datensaetze/datentabellen.md)
+- [Views](https://docs.polyteia.com/datensaetze/ansichten.md)
+- [Auswertungen](https://docs.polyteia.com/auswertungen.md): Filtern, aggregieren und visualisieren Sie Ihre Daten in der Polyteia-Plattform.
+- [Auswertung erstellen](https://docs.polyteia.com/auswertungen/auswertung-erstellen.md): Erstellen Sie Auswertungen in der Polyteia-Plattform.
+- [Aggregation](https://docs.polyteia.com/auswertungen/aggregation.md): Berechnen Sie Aggregationen wie Summen, Durchschnitte oder einzigartige Werte in der Polyteia-Plattform.
+- [Filter](https://docs.polyteia.com/auswertungen/filter.md): Grenzen Sie die Daten ein, die Sie in der Polyteia-Plattform auswerten möchten.
+- [Pivot-Tabellen](https://docs.polyteia.com/auswertungen/pivot-tabellen.md)
+- [Visualisierungen](https://docs.polyteia.com/auswertungen/visualisierungen.md): Bereiten Sie Auswertungen visuell in der Polyteia-Plattform auf.
+- [Tabellendiagramm](https://docs.polyteia.com/auswertungen/visualisierungen/tabellendiagramm.md): Erstellen und konfigurieren Sie Tabellendiagramme in der Polyteia-Plattform.
+- [Liniendiagramm](https://docs.polyteia.com/auswertungen/visualisierungen/liniendiagramm.md): Erstellen und konfigurieren Sie Liniendiagramme in der Polyteia-Plattform.
+- [Balkendiagramm](https://docs.polyteia.com/auswertungen/visualisierungen/balkendiagramm.md): Erstellen und konfigurieren Sie Balkendiagramme in der Polyteia-Plattform.
+- [Kreisdiagramm](https://docs.polyteia.com/auswertungen/visualisierungen/kreisdiagramm.md): Erstellen und konfigurieren Sie Kreisdiagramme in der Polyteia-Plattform.
+- [Einzelzahl](https://docs.polyteia.com/auswertungen/visualisierungen/einzelzahl.md): Erstellen und konfigurieren Sie Einzelzahl-Diagramme in der Polyteia-Plattform.
+- [Boxplot](https://docs.polyteia.com/auswertungen/visualisierungen/boxplot.md): Erstellen und konfigurieren Sie Boxplots in der Polyteia-Plattform.
+- [Streudiagramm](https://docs.polyteia.com/auswertungen/visualisierungen/streudiagramm.md): Erstellen und konfigurieren Sie Streudiagramme in der Polyteia-Plattform.
+- [Karten](https://docs.polyteia.com/auswertungen/visualisierungen/karten.md): Erstellen und konfigurieren Sie Kartenvisualisierungen in der Polyteia-Plattform.
+- [GeoJSON und JSON](https://docs.polyteia.com/auswertungen/visualisierungen/karten/geojson-und-json.md): Verstehen Sie die Unterschiede zwischen GeoJSON und JSON für Kartenvisualisierungen in der Polyteia-Plattform.
+- [Karten erstellen](https://docs.polyteia.com/auswertungen/visualisierungen/karten/karten-erstellen.md): Erstellen und konfigurieren Sie Kartenvisualisierungen in der Polyteia-Plattform.
+- [Verknüpfungen](https://docs.polyteia.com/auswertungen/verknuepfungen.md): Mit Verknüpfungen zwei oder mehrere Datensätze in der Polyteia-Plattform zusammenführen.
+- [Grundlagen](https://docs.polyteia.com/auswertungen/verknuepfungen/grundlagen.md): Um Verknüpfungen erfolgreich in der Polyteia-Plattform aufzusetzen, hilft zu verstehen, wie sie funktionieren.
+- [Verknüpfen in Auswertungen](https://docs.polyteia.com/auswertungen/verknuepfungen/verknuepfen-in-auswertungen.md): Datensätze im Auswertungs-Editor der Polyteia-Plattform miteinander verknüpfen.
+- [SQL-Editor](https://docs.polyteia.com/auswertungen/sql-editor.md): Schreiben Sie benutzerdefinierte SQL-Abfragen, um Ihre Daten in der Polyteia-Plattform zu erkunden.
+- [SQL-Befehle](https://docs.polyteia.com/auswertungen/sql-editor/sql-befehle.md)
+- [SQL-Variablen](https://docs.polyteia.com/auswertungen/sql-editor/sql-variablen.md): Fügen Sie interaktive Parameter zu Ihren SQL-Abfragen hinzu, die in Auswertungen getestet und als Filter in Berichten verwendet werden können.
+- [SQL-Editor](https://docs.polyteia.com/auswertungen/sql-editor-1.md): Der SQL-Editor ermöglicht es Ihnen, eigene Abfragen in der Polyteia-Plattform zu schreiben, um Datensätze zu erkunden.
+- [Auswertungsvorlagen](https://docs.polyteia.com/auswertungen/auswertungsvorlagen.md): Erstellen und teilen Sie Auswertungsvorlagen, damit andere Nutzer Ihre Auswertung auf eigene Daten anwenden können.
+- [Auswertungen verwalten](https://docs.polyteia.com/auswertungen/auswertungen-verwalten.md): Verwalten Sie Ihre Auswertungen in der Polyteia-Plattform.
+- [Berichte](https://docs.polyteia.com/berichte.md): Erstellen und verwalten Sie Berichte in der Polyteia-Plattform.
+- [Bericht erstellen](https://docs.polyteia.com/berichte/bericht-erstellen.md): Erstellen Sie Berichte in der Polyteia-Plattform.
+- [Variablen in Textblöcken](https://docs.polyteia.com/berichte/textvariablen.md): Erstellen und verwenden Sie Variablen in Berichten für dynamische, wiederverwendbare Werte.
+- [Seiten, Gruppen, Abschnitte und Datenseiten](https://docs.polyteia.com/berichte/seiten-gruppen-abschnitte.md): Erstellen Sie gut strukturierte Berichte mit Hilfe von Seiten, Gruppen, Abschnitten und Datenseiten
+- [Datenseiten](https://docs.polyteia.com/berichte/datenseite.md): Zeigen Sie Daten aus einem Datensatz direkt in Ihrem Bericht an.
+- [Berichtsansichten](https://docs.polyteia.com/berichte/ansichten.md): Erstellen und teilen Sie angepasste Versionen Ihrer Berichte — intern oder öffentlich über einen Link.
+- [Ansicht erstellen](https://docs.polyteia.com/berichte/ansichten/ansicht-erstellen.md): Schritt-für-Schritt-Anleitung zur Erstellung von Berichtsansichten — intern oder öffentlich.
+- [Ansichten verwalten](https://docs.polyteia.com/berichte/ansichten/ansichten-verwalten.md): Bearbeiten, synchronisieren und verwalten Sie Ihre Berichtsansichten.
+- [Berichtsfilter](https://docs.polyteia.com/berichte/filter.md): Kontrollieren Sie, welche Daten in Ihren Berichten angezeigt werden, mit Filteroptionen
+- [Filter erstellen](https://docs.polyteia.com/berichte/filter/filter-erstellen.md): Schritt-für-Schritt-Anleitung zur Einrichtung globaler Berichtsfilter, die sich mit SQL-Auswertungen mit Variablen verbinden.
+- [Filtertypen](https://docs.polyteia.com/berichte/filter/filtertypen.md): Referenzleitfaden zu den drei verfügbaren Filtertypen für die Verbindung mit SQL-Auswertungen mit Variablen.
+- [Dynamische Filteroptionen](https://docs.polyteia.com/berichte/filter/dynamische-filteroptionen.md): Lassen Sie Filteroptionen automatisch aus Ihren Daten generieren mit SQL-Abfragen für dynamische, datengesteuerte Filterung.
+- [Erweiterte Einstellungen](https://docs.polyteia.com/berichte/filter/erweiterte-einstellungen.md): Steuern Sie Standardwerte, Sichtbarkeit und das Verhalten globaler Filter.
+- [Filter-Komponenten platzieren](https://docs.polyteia.com/berichte/filter/filter-komponenten.md): Platzieren Sie Filter direkt im Berichtslayout und machen Sie sie für Leser:innen leichter zugänglich.
+- [Design anpassen](https://docs.polyteia.com/berichte/design-anpassen.md): Passen Sie die Diagrammfarben Ihres Berichts an Ihr Corporate Design an.
+- [Berichte verwalten](https://docs.polyteia.com/berichte/berichte-verwalten.md): Verwalten Sie Berichte in der Polyteia-Plattform.
+- [Formulare](https://docs.polyteia.com/formulare.md): Erstellen Sie Online-Formulare, sammeln Sie strukturierte Daten und verwalten Sie Einreichungen direkt in Ihren Datensätzen.
+- [Formulare erstellen](https://docs.polyteia.com/formulare/erstellen.md): Überblick über die Erstellung von Online-Formularen mit dem visuellen Editor. Von der ersten Idee bis zur Veröffentlichung.
+- [Formular-Editor](https://docs.polyteia.com/formulare/erstellen/formular-editor.md): Detaillierte Schritt-für-Schritt-Anleitung für den visuellen Formular-Editor – vom ersten Element bis zum fertigen, mehrseitigen Formular.
+- [Feldtypen](https://docs.polyteia.com/formulare/erstellen/feldtypen.md): Übersicht aller 19 Formularfelder, von Strukturelementen über einfache Texteingaben bis zu Rastern, Schiebereglern und Datei-Upload.
+- [Struktur und Layout](https://docs.polyteia.com/formulare/erstellen/feldtypen/struktur-und-layout.md): Strukturelemente wie Überschriften, Beschreibungen und Trennstriche zur visuellen Gliederung Ihrer Formulare.
+- [Grundlegende Eingaben](https://docs.polyteia.com/formulare/erstellen/feldtypen/grundlegende-eingaben.md): Die fünf grundlegenden Eingabefelder: Freitext, Langer Text, Zahl, Datum und Ja/Nein für die häufigsten Datenerfassungen.
+- [Erweiterte Eingaben](https://docs.polyteia.com/formulare/erstellen/feldtypen/erweiterte-eingaben.md): Spezialisierte Eingabefelder für E-Mail, Telefon, URL, Uhrzeit, Datum mit Uhrzeit und Datei-Upload – mit automatischer Formatprüfung.
+- [Auswahl und Bewertung](https://docs.polyteia.com/formulare/erstellen/feldtypen/auswahl-und-bewertung.md): Auswahlfelder und Bewertungsskalen: Mehrfachauswahl, Einzelauswahl als Liste oder Optionen und Schieberegler.
+- [Raster](https://docs.polyteia.com/formulare/erstellen/feldtypen/raster.md): Das Raster-Feld sammelt strukturierte Daten in einer Tabelle mit Zeilen und Spalten. Perfekt für wiederkehrende Fragen mit einheitlichen Antwortformaten.
+- [Freischalten und Teilen](https://docs.polyteia.com/formulare/erstellen/freischalten.md): Vollständige Anleitung zum Freischalten und Teilen von Formularen – Einstellungen, Erscheinungsbild, Datensatz-Verknüpfung und Veröffentlichung.
+- [Einreichungen verwalten](https://docs.polyteia.com/formulare/erstellen/einreichungen-verwalten.md): Eingereichte Formulardaten einsehen, verwalten und mit verknüpften Datensätzen für Analysen und Auswertungen nutzen.
+- [Erweiterte Funktionen](https://docs.polyteia.com/formulare/erweitert.md): Erweiterte Formular-Funktionen für dynamische, intelligente Formulare mit Bedingungen und Validierungen.
+- [Bedingungen](https://docs.polyteia.com/formulare/erweitert/bedingungen.md): Erstellen Sie intelligente Formulare, die sich an die Antworten der Nutzenden anpassen – Felder erscheinen, verschwinden oder werden erforderlich basierend auf vorherigen Eingaben.
+- [Validierungsregeln](https://docs.polyteia.com/formulare/erweitert/validierung.md): Prüfen Sie Eingaben automatisch auf Richtigkeit, bevor das Formular abgesendet wird – mit verständlichen Fehlermeldungen für die Nutzenden.
+- [Visueller Editor](https://docs.polyteia.com/formulare/erweitert/bedingungseditor.md): Erstellen Sie Bedingungen und Validierungen ohne Programmierung – einfach per Auswahl mit dem visuellen Editor.
+- [Ausdrücke](https://docs.polyteia.com/formulare/erweitert/ausdruecke.md): Ausdrücke für erfahrene Nutzer – maximale Flexibilität bei Bedingungen und Validierungen mit der Common Expression Language.
+- [Formulare ausfüllen](https://docs.polyteia.com/formulare/ausfuellen.md)
+- [Zugang](https://docs.polyteia.com/formulare/ausfuellen/zugang.md)
+- [Ausfüllen](https://docs.polyteia.com/formulare/ausfuellen/ausfuellen.md)
+- [Dokumentationen erstellen](https://docs.polyteia.com/dokumentationen-erstellen.md): Verfassen und fügen Sie begleitende Texte als Dokumentation zu Lösungen und Ressourcen hinzu.
+- [Fälle](https://docs.polyteia.com/falle.md): Verwaltung und Bearbeitung von Fällen in der Polyteia-Plattform
+- [Workflows](https://docs.polyteia.com/workflows.md): Automatisierung von Geschäftsprozessen mit Workflows in der Polyteia-Plattform
+- [KI (beta)](https://docs.polyteia.com/ki.md): Der KI-Assistent hilft Ihnen, Daten per Chat zu analysieren – ganz ohne Programmierkenntnisse.
+- [Rollen und Berechtigungen](https://docs.polyteia.com/rollen-und-berechtigungen.md): Erfahren Sie mehr über Rollen und Berechtigungen in der Polyteia-Plattform.
+- [Rollen](https://docs.polyteia.com/rollen-und-berechtigungen/rollen.md): Rollen in der Polyteia-Plattform sind definierte Zugriffs- und Bearbeitungsrechte.
+- [Berechtigungen](https://docs.polyteia.com/rollen-und-berechtigungen/berechtigungen.md): Rollenbasierte Aktionsrechte innerhalb der Polyteia-Plattform.
+- [Berechtigungstabelle](https://docs.polyteia.com/rollen-und-berechtigungen/berechtigungstabelle.md): Umfassende Übersicht über Rollen und Berechtigungen für alle Bereiche der Polyteia-Plattform.
+- [Sicherheit und Datenschutz](https://docs.polyteia.com/sicherheit.md)
+- [Trust Center](https://docs.polyteia.com/sicherheit/trust-center.md): Erfahren Sie mehr über Sicherheit und Datenschutz in der Polyteia-Plattform.
+- [Sicherheitsvorkehrungen](https://docs.polyteia.com/sicherheit/sicherheitsvorkehrungen.md): Erfahren Sie mehr über die Sicherheitsvorkehrungen der Polyteia-Plattform.
+- [Datenschutz](https://docs.polyteia.com/sicherheit/datenschutz.md): Erfahren Sie mehr über den Datenschutz im Rahmen der Nutzung des Supports von Polyteia und Hilfebereichs.
+- [Datenschutz Academy](https://docs.polyteia.com/sicherheit/datenschutz-academy.md): Erfahren Sie mehr über den Datenschutz im Rahmen der Nutzung der Polyteia Academy.
+- [Weisungsregister](https://docs.polyteia.com/sicherheit/weisungsregister.md): Dokumentieren Sie Ihre Datenverarbeitungstätigkeiten gemäß DSGVO im Weisungsregister
+- [Eintrag erstellen](https://docs.polyteia.com/sicherheit/weisungsregister/eintrag-erstellen.md): Schritt-für-Schritt-Anleitung zum Erstellen eines Eintrags im Weisungsregister
+- [Einträge verwalten](https://docs.polyteia.com/sicherheit/weisungsregister/eintraege-verwalten.md): Einträge bearbeiten, aktivieren, deaktivieren und löschen
+- [Übersicht und Bestätigung](https://docs.polyteia.com/sicherheit/weisungsregister/uebersicht-und-bestaetigung.md): Wie funktioniert die Übersicht und Bestätigung des Weisungsregisters
+- [Häufig gestellte Fragen](https://docs.polyteia.com/sicherheit/weisungsregister/faq.md): Antworten auf häufig gestellte Fragen zum Weisungsregister
+- [Hosting](https://docs.polyteia.com/sicherheit/hosting.md): Erfahren Sie mehr über das Hosting der Polyteia-Plattform.
+- [Hilfe und Support](https://docs.polyteia.com/hilfe-und-support.md)
+
+## API
+
+- [Einführung](https://docs.polyteia.com/api-docs/readme.md): Dies ist die API-Dokumentation für die Polyteia-Plattform.
+- [Authentifizierung](https://docs.polyteia.com/api-docs/authentication.md): Hier finden Sie Informationen zum Authentifizierungsprozess der Polyteia API.
+- [Organisation](https://docs.polyteia.com/api-docs/organization.md): Hier finden Sie Informationen zu allen API-Befehlen und -Abfragen im Zusammenhang mit Organisationen.
+- [Arbeitsbereich](https://docs.polyteia.com/api-docs/workspace.md): Hier finden Sie Informationen zu allen API-Befehlen und -Abfragen im Zusammenhang mit Arbeitsbereichen.
+- [Lösung](https://docs.polyteia.com/api-docs/solution.md): Hier finden Sie Informationen zu allen API-Befehlen und -Abfragen im Zusammenhang mit Lösungen.
+- [Datensatz](https://docs.polyteia.com/api-docs/dataset.md): Hier finden Sie Informationen zu allen API-Befehlen und -Abfragen im Zusammenhang mit Datensätzen.
+
+* [Introduction](https://docs.polyteia.com/api-docs/en/readme.md): This is the API documentation for the Polyteia platform.
+* [Authentication](https://docs.polyteia.com/api-docs/en/authentication.md): Here you can find information about the authentication process for the Polyteia API.
+* [Organization](https://docs.polyteia.com/api-docs/en/organization.md): Here you can find information about all API commands and queries related to organizations.
+* [Workspace](https://docs.polyteia.com/api-docs/en/workspace.md): Here you can find information about all API commands and queries related to workspaces.
+* [Solution](https://docs.polyteia.com/api-docs/en/solution.md): Here you can find information about all API commands and queries related to solutions.
+* [Dataset](https://docs.polyteia.com/api-docs/en/dataset.md): Here you can find information about all API commands and queries related to datasets.
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.polyteia.com/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

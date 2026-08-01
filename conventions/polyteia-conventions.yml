@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.polyteia.com/api-docs/en/readme.md
+api_style:
+  protocol: rpc
+  transport: single POST endpoint (https://app.polyteia.com/api)
+  dispatch: JSON body carries one of `command` (mutation) or `query` (read) + `params`
+authentication:
+  style: bearer
+  token: Personal Access Key (PAK)
+  header: 'Authorization: Bearer <PAK>'
+  ref: authentication/polyteia-authentication.yml
+idempotency:
+  supported: false
+  notes: >
+    No idempotency key/header is documented. Because the API is RPC over a single
+    POST endpoint, safe retries are the caller's responsibility.
+pagination:
+  style: page-number
+  request_params: [page, size]
+  response_fields: [total, page, size, items]
+  notes: List queries (list_organizations/list_workspaces/list_solutions/list_datasets) return a paginated envelope under `data`.
+error_envelope:
+  location: response body `error`
+  shape: { code: integer, message: string, details: array }
+  http_status: >
+    HTTP 200 is returned for both success and business errors (except 401 for auth
+    failures); callers must inspect the body for `data` vs `error`.
+  ref: errors/polyteia-problem-types.yml
+metadata:
+  fields: [attributes]
+  notes: Workspaces and solutions accept a free-form `attributes` object; datasets carry a `metadata` block (asset_info + column schema).
+request_tracing:
+  supported: unknown
+  notes: No request-id/correlation header is documented.
+versioning:
+  api_versioning: none-documented
+  product_version: '3.1.4'
+  ref: changelog/polyteia-changelog.yml
+rate_limiting:
+  documented: false
+  notes: Organization-level usage quotas (user licenses, storage) exist in-product but no API rate-limit headers are documented.

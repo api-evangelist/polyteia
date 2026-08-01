@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.polyteia.com/resources/data-security
+url: https://trustcenter.polyteia.com/
+certifications:
+  - GDPR
+  - BSI IT-Grundschutz
+  - BSI C5
+  - ISO 27001 (in progress)
+notes: >
+  Polyteia operates a public Trust Center (trustcenter.polyteia.com) and a
+  Security & Data Protection page. Data is encrypted at rest (AES-256) and in
+  transit (TLS 1.2+), processed and stored in BSI-C5-certified data centers with
+  headquarters and physical servers within the EU. Continuous vulnerability
+  scanning and regular independent penetration testing are performed. Legal
+  artifacts (DPA, EVB-IT service contracts, GTC) are available via the Trust
+  Center. Certifications were verified from the vendor's own Security & Data
+  Protection page; trustcenter.polyteia.com is a JS-rendered app so its body was
+  not machine-scraped.
+evidence:
+  - source: https://www.polyteia.com/resources/data-security
+    keywords: [iso 27001, bsi it-grundschutz, c5, gdpr, aes-256, penetration testing]

@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: openapi/polyteia-platform-openapi.yml
+docs: https://docs.polyteia.com/api-docs/en/authentication.md
+notes: >
+  Polyteia authenticates API requests with a Personal Access Key (PAK) presented
+  as an HTTP Bearer token (`Authorization: Bearer <PAK>`). A PAK impersonates the
+  issuing account and inherits that account's permissions; there is no separate
+  OAuth scope surface. PAKs are created from Account > Security & Access in the
+  platform UI and are shown only once at creation.
+summary:
+  types:
+  - http
+schemes:
+- name: PersonalAccessKey
+  type: http
+  scheme: bearer
+  bearerFormat: PAK
+  description: 'Personal Access Key (PAK). A PAK impersonates the issuing account and carries
+    that account''s permissions. Presented as `Authorization: Bearer <PAK>`.'
+  sources:
+  - openapi/polyteia-platform-openapi.yml
