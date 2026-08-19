@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Polyteia Platform Dataset Organization API",
+    "version": "3.1.4"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Organization",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Invoke an RPC command or query",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://app.polyteia.com/api",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Single RPC entrypoint. The request body carries exactly one of `command` (a mutation) or `query` (a read), together with `params`. See `x-rpc-methods` on the document root for the full list of supported commands and queries and their parameters.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

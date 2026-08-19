@@ -2,65 +2,71 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: openapi/polyteia-platform-openapi.yml
-notes: >
-  No official hosted/remote Polyteia MCP server was found (searched docs, npm
-  @modelcontextprotocol, MCP registries — none as of 2026-07-20). The tools below
-  are a CANDIDATE set derived one-to-one from the platform's documented RPC
-  commands/queries. Each maps to a POST https://app.polyteia.com/api call carrying
-  the named command/query.
+notes: 'No official hosted/remote Polyteia MCP server was found (searched docs, npm @modelcontextprotocol,
+  MCP registries — none as of 2026-07-20). The tools below are a CANDIDATE set derived one-to-one from
+  the platform''s documented RPC commands/queries. Each maps to a POST https://app.polyteia.com/api call
+  carrying the named command/query.
+
+  '
 server:
   name: polyteia
   transport: http
   url: null
 tools:
-  - name: get_organization
-    description: Read an organization by id.
-    source_operation: openapi/polyteia-platform-openapi.yml#get_organization
-  - name: list_organizations
-    description: List accessible organizations (paginated).
-    source_operation: openapi/polyteia-platform-openapi.yml#list_organizations
-  - name: get_workspace
-    description: Read a workspace by id.
-    source_operation: openapi/polyteia-platform-openapi.yml#get_workspace
-  - name: list_workspaces
-    description: List workspaces (paginated).
-    source_operation: openapi/polyteia-platform-openapi.yml#list_workspaces
-  - name: create_workspace
-    description: Create a workspace in an organization.
-    source_operation: openapi/polyteia-platform-openapi.yml#create_workspace
-  - name: update_workspace
-    description: Update a workspace.
-    source_operation: openapi/polyteia-platform-openapi.yml#update_workspace
-  - name: delete_workspace
-    description: Delete a workspace.
-    source_operation: openapi/polyteia-platform-openapi.yml#delete_workspace
-  - name: get_solution
-    description: Read a solution by id.
-    source_operation: openapi/polyteia-platform-openapi.yml#get_solution
-  - name: list_solutions
-    description: List solutions (paginated).
-    source_operation: openapi/polyteia-platform-openapi.yml#list_solutions
-  - name: create_solution
-    description: Create a solution in a workspace.
-    source_operation: openapi/polyteia-platform-openapi.yml#create_solution
-  - name: update_solution
-    description: Update a solution.
-    source_operation: openapi/polyteia-platform-openapi.yml#update_solution
-  - name: delete_solution
-    description: Delete a solution.
-    source_operation: openapi/polyteia-platform-openapi.yml#delete_solution
-  - name: get_dataset
-    description: Read a dataset by id, or by solution_id + slug.
-    source_operation: openapi/polyteia-platform-openapi.yml#get_dataset
-  - name: list_datasets
-    description: List datasets in a solution (paginated).
-    source_operation: openapi/polyteia-platform-openapi.yml#list_datasets
-  - name: create_dataset
-    description: Create a dataset in a solution.
-    source_operation: openapi/polyteia-platform-openapi.yml#create_dataset
-  - name: update_dataset
-    description: Update a dataset.
-    source_operation: openapi/polyteia-platform-openapi.yml#update_dataset
-  - name: delete_dataset
-    description: Delete a dataset.
-    source_operation: openapi/polyteia-platform-openapi.yml#delete_dataset
+- name: get_organization
+  description: Read an organization by id.
+  source_operation: openapi/polyteia-platform-openapi.yml#get_organization
+- name: list_organizations
+  description: List accessible organizations (paginated).
+  source_operation: openapi/polyteia-platform-openapi.yml#list_organizations
+- name: get_workspace
+  description: Read a workspace by id.
+  source_operation: openapi/polyteia-platform-openapi.yml#get_workspace
+- name: list_workspaces
+  description: List workspaces (paginated).
+  source_operation: openapi/polyteia-platform-openapi.yml#list_workspaces
+- name: create_workspace
+  description: Create a workspace in an organization.
+  source_operation: openapi/polyteia-platform-openapi.yml#create_workspace
+- name: update_workspace
+  description: Update a workspace.
+  source_operation: openapi/polyteia-platform-openapi.yml#update_workspace
+- name: delete_workspace
+  description: Delete a workspace.
+  source_operation: openapi/polyteia-platform-openapi.yml#delete_workspace
+- name: get_solution
+  description: Read a solution by id.
+  source_operation: openapi/polyteia-platform-openapi.yml#get_solution
+- name: list_solutions
+  description: List solutions (paginated).
+  source_operation: openapi/polyteia-platform-openapi.yml#list_solutions
+- name: create_solution
+  description: Create a solution in a workspace.
+  source_operation: openapi/polyteia-platform-openapi.yml#create_solution
+- name: update_solution
+  description: Update a solution.
+  source_operation: openapi/polyteia-platform-openapi.yml#update_solution
+- name: delete_solution
+  description: Delete a solution.
+  source_operation: openapi/polyteia-platform-openapi.yml#delete_solution
+- name: get_dataset
+  description: Read a dataset by id, or by solution_id + slug.
+  source_operation: openapi/polyteia-platform-openapi.yml#get_dataset
+- name: list_datasets
+  description: List datasets in a solution (paginated).
+  source_operation: openapi/polyteia-platform-openapi.yml#list_datasets
+- name: create_dataset
+  description: Create a dataset in a solution.
+  source_operation: openapi/polyteia-platform-openapi.yml#create_dataset
+- name: update_dataset
+  description: Update a dataset.
+  source_operation: openapi/polyteia-platform-openapi.yml#update_dataset
+- name: delete_dataset
+  description: Delete a dataset.
+  source_operation: openapi/polyteia-platform-openapi.yml#delete_dataset
+deployment:
+  mode: none
+  verified: derived
+  tools: 17
+  checked: '2026-08-12'
+  source: catalog MCP census
