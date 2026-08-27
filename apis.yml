@@ -49,28 +49,6 @@ tags:
 - Business Intelligence
 - No-Code
 apis:
-- aid: polyteia:polyteia-dataset-api
-  name: Polyteia Dataset API
-  description: The Dataset API from Polyteia — 1 operation(s) for dataset.
-  humanURL: https://docs.polyteia.com/api-docs
-  baseURL: https://app.polyteia.com/api
-  tags:
-  - Dataset
-  properties:
-  - type: OpenAPI
-    url: openapi/polyteia-dataset-api-openapi.yml
-  - type: Documentation
-    url: https://docs.polyteia.com/api-docs
-  - type: Authentication
-    url: authentication/polyteia-authentication.yml
-  - type: ErrorCatalog
-    url: errors/polyteia-problem-types.yml
-  - type: Conventions
-    url: conventions/polyteia-conventions.yml
-  - type: DataModel
-    url: data-model/polyteia-data-model.yml
-  - type: AgenticAccess
-    url: agentic-access/polyteia-agentic-access.yml
 - aid: polyteia:polyteia-organization-api
   name: Polyteia Organization API
   description: The Organization API from Polyteia — 1 operation(s) for organization.
@@ -81,50 +59,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/polyteia-organization-api-openapi.yml
-  - type: Documentation
-    url: https://docs.polyteia.com/api-docs
-  - type: Authentication
-    url: authentication/polyteia-authentication.yml
-  - type: ErrorCatalog
-    url: errors/polyteia-problem-types.yml
-  - type: Conventions
-    url: conventions/polyteia-conventions.yml
-  - type: DataModel
-    url: data-model/polyteia-data-model.yml
-  - type: AgenticAccess
-    url: agentic-access/polyteia-agentic-access.yml
-- aid: polyteia:polyteia-solution-api
-  name: Polyteia Solution API
-  description: The Solution API from Polyteia — 1 operation(s) for solution.
-  humanURL: https://docs.polyteia.com/api-docs
-  baseURL: https://app.polyteia.com/api
-  tags:
-  - Solution
-  properties:
-  - type: OpenAPI
-    url: openapi/polyteia-solution-api-openapi.yml
-  - type: Documentation
-    url: https://docs.polyteia.com/api-docs
-  - type: Authentication
-    url: authentication/polyteia-authentication.yml
-  - type: ErrorCatalog
-    url: errors/polyteia-problem-types.yml
-  - type: Conventions
-    url: conventions/polyteia-conventions.yml
-  - type: DataModel
-    url: data-model/polyteia-data-model.yml
-  - type: AgenticAccess
-    url: agentic-access/polyteia-agentic-access.yml
-- aid: polyteia:polyteia-workspace-api
-  name: Polyteia Workspace API
-  description: The Workspace API from Polyteia — 1 operation(s) for workspace.
-  humanURL: https://docs.polyteia.com/api-docs
-  baseURL: https://app.polyteia.com/api
-  tags:
-  - Workspace
-  properties:
-  - type: OpenAPI
-    url: openapi/polyteia-workspace-api-openapi.yml
   - type: Documentation
     url: https://docs.polyteia.com/api-docs
   - type: Authentication
