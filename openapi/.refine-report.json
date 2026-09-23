@@ -1,20 +1,21 @@
 {
   "provider": "polyteia",
   "sources": [
-    "polyteia-dataset-api-openapi.yml",
-    "polyteia-organization-api-openapi.yml",
-    "polyteia-solution-api-openapi.yml",
-    "polyteia-workspace-api-openapi.yml"
+    "_original/polyteia-platform-openapi.yml"
   ],
   "outputs": [
-    "polyteia-dataset-api-openapi.yml",
-    "polyteia-organization-api-openapi.yml",
-    "polyteia-solution-api-openapi.yml",
-    "polyteia-workspace-api-openapi.yml"
+    "polyteia-organization-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "polyteia-platform-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "polyteia-platform-openapi.yml: multi-axis tagging (4 tags, 1 first tags, 4.00x duplication over 1 operations) \u2014 split on first tag, 1 operations narrowed",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "polyteia-organization-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
