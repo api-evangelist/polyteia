@@ -72,14 +72,24 @@ paths:
                 $ref: '#/components/schemas/ErrorEnvelope'
 components:
   schemas:
-    RpcResponse:
+    Error:
       type: object
-      description: Standard RPC response — exactly one of `data` or `error` is present.
       properties:
-        data:
-          description: Present on success.
-        error:
-          $ref: '#/components/schemas/Error'
+        code:
+          type: integer
+          description: HTTP-style error code (400/401/403/404/500).
+          examples:
+          - 500
+        message:
+          type: string
+          examples:
+          - internal error
+        details:
+          type: array
+          items: {}
+      required:
+      - code
+      - message
     RpcRequest:
       type: object
       description: An RPC request carrying exactly one of `command` or `query`.
@@ -120,24 +130,14 @@ components:
       properties:
         error:
           $ref: '#/components/schemas/Error'
-    Error:
+    RpcResponse:
       type: object
+      description: Standard RPC response — exactly one of `data` or `error` is present.
       properties:
-        code:
-          type: integer
-          description: HTTP-style error code (400/401/403/404/500).
-          examples:
-          - 500
-        message:
-          type: string
-          examples:
-          - internal error
-        details:
-          type: array
-          items: {}
-      required:
-      - code
-      - message
+        data:
+          description: Present on success.
+        error:
+          $ref: '#/components/schemas/Error'
   securitySchemes:
     PersonalAccessKey:
       type: http
