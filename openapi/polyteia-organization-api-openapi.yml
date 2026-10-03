@@ -90,6 +90,19 @@ components:
       required:
       - code
       - message
+    RpcResponse:
+      type: object
+      description: Standard RPC response — exactly one of `data` or `error` is present.
+      properties:
+        data:
+          description: Present on success.
+        error:
+          $ref: '#/components/schemas/Error'
+    ErrorEnvelope:
+      type: object
+      properties:
+        error:
+          $ref: '#/components/schemas/Error'
     RpcRequest:
       type: object
       description: An RPC request carrying exactly one of `command` or `query`.
@@ -125,19 +138,6 @@ components:
           additionalProperties: true
       required:
       - params
-    ErrorEnvelope:
-      type: object
-      properties:
-        error:
-          $ref: '#/components/schemas/Error'
-    RpcResponse:
-      type: object
-      description: Standard RPC response — exactly one of `data` or `error` is present.
-      properties:
-        data:
-          description: Present on success.
-        error:
-          $ref: '#/components/schemas/Error'
   securitySchemes:
     PersonalAccessKey:
       type: http
