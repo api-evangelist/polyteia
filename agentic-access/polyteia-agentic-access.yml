@@ -1,6 +1,6 @@
-generated: '2026-07-20'
+generated: '2026-09-24'
 method: generated
-source: openapi/polyteia-platform-openapi.yml
+source: openapi/polyteia-organization-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
