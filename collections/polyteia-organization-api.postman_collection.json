@@ -1,32 +1,26 @@
 {
+  "info": {
+    "_postman_id": "1d92d5c2-d18b-4ffd-8124-e75094e04220",
+    "name": "Polyteia Platform Organization API",
+    "description": "Polyteia is a data platform for the German/European public sector. The platform can be fully driven through an RPC-style API: a single endpoint that accepts `command` (create/update/delete) and `query` (read) calls against Organizations, Workspaces, Solutions and Datasets. Authentication uses a Personal Access Key (PAK) presented as a Bearer token. All requests are POST to the single endpoint and return HTTP 200 with either a `data` or an `error` object (except auth failures, which return 401).\n\nContact Support:\n Name: Polyteia Support\n Email: security@polyteia.de",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-22T01:06:41.000Z",
+    "updatedAt": "2026-10-22T01:06:41.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-1d92d5c2-d18b-4ffd-8124-e75094e04220"
+  },
   "item": [
     {
-      "id": "79c601c7-882f-4262-9351-b80f19608233",
-      "name": "Organization",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "api",
       "item": [
         {
-          "id": "9920b0b8-f00d-4ad8-afa6-b1520dd8401e",
           "name": "Invoke an RPC command or query",
+          "id": "94f0c239-0b5e-4181-833e-eebc98e5fd31",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
-            "name": "Invoke an RPC command or query",
-            "description": {
-              "content": "Single RPC entrypoint. The request body carries exactly one of `command` (a mutation) or `query` (a read), together with `params`. See `x-rpc-methods` on the document root for the full list of supported commands and queries and their parameters.\n",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "api"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": []
-            },
+            "method": "POST",
             "header": [
               {
                 "key": "Content-Type",
@@ -37,137 +31,150 @@
                 "value": "application/json"
               }
             ],
-            "method": "POST",
-            "auth": null,
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"params\": {\n    \"key_0\": 816.7566410921212,\n    \"key_1\": false,\n    \"key_2\": \"string\"\n  },\n  \"command\": \"<string>\",\n  \"query\": \"<string>\"\n}",
+              "raw": "{\n  \"params\": {\n    \"eu_bc2\": true,\n    \"proident_8\": 93251936.30576652\n  },\n  \"command\": \"update_solution\",\n  \"query\": \"list_workspaces\"\n}",
               "options": {
                 "raw": {
+                  "headerFamily": "json",
                   "language": "json"
                 }
               }
-            }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api"
+              ]
+            },
+            "description": "Single RPC entrypoint. The request body carries exactly one of `command` (a mutation) or `query` (a read), together with `params`. See `x-rpc-methods` on the document root for the full list of supported commands and queries and their parameters."
           },
           "response": [
             {
-              "id": "9b4badf9-224c-40d8-9621-5c9e7daa654f",
+              "id": "c305e634-a2f3-4475-9868-c741dfaf7f03",
               "name": "RPC result. Always returned for both success and business errors; inspect the body for `data` (success) or `error` (failure).\n",
               "originalRequest": {
-                "url": {
-                  "path": [
-                    "api"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
+                "method": "POST",
                 "header": [
                   {
-                    "description": {
-                      "content": "Added as a part of security scheme: bearer",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
+                    "key": "Content-Type",
+                    "value": "application/json"
                   },
                   {
                     "key": "Accept",
                     "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
                   }
                 ],
-                "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"command\": \"create_dataset\",\n  \"params\": {\n    \"name\": \"Customers List\",\n    \"solution_id\": \"sol_cv33u4n0i6q45p93i930\",\n    \"description\": \"Customers list\",\n    \"source\": \"https://example.com/dataset.csv\",\n    \"slug\": \"customers_list\"\n  }\n}",
+                  "raw": "{\n  \"params\": {\n    \"eu_bc2\": true,\n    \"proident_8\": 93251936.30576652\n  },\n  \"command\": \"update_solution\",\n  \"query\": \"list_workspaces\"\n}",
                   "options": {
                     "raw": {
+                      "headerFamily": "json",
                       "language": "json"
                     }
                   }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api"
+                  ]
                 }
               },
               "status": "OK",
               "code": 200,
+              "_postman_previewlanguage": "json",
               "header": [
                 {
                   "key": "Content-Type",
                   "value": "application/json"
                 }
               ],
-              "body": "{\n  \"data\": {},\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"internal error\"\n  }\n}",
               "cookie": [],
-              "_postman_previewlanguage": "json"
+              "responseTime": null,
+              "body": "{\n  \"data\": {\n    \"description\": \"Present on success.\"\n  },\n  \"error\": {\n    \"code\": \"<integer>\",\n    \"message\": \"<string>\"\n  }\n}",
+              "createdAt": "2026-10-22T01:06:41.000Z",
+              "updatedAt": "2026-10-22T01:06:41.000Z",
+              "uid": "35240-c305e634-a2f3-4475-9868-c741dfaf7f03"
             },
             {
-              "id": "8a583317-2f75-481d-bff9-71f52473009f",
-              "name": "Unauthorized — invalid or missing Personal Access Key.",
+              "id": "a751129c-d387-4d0a-8434-17b2e7ad612b",
+              "name": "Unauthorized \u2014 invalid or missing Personal Access Key.",
               "originalRequest": {
-                "url": {
-                  "path": [
-                    "api"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
+                "method": "POST",
                 "header": [
                   {
-                    "description": {
-                      "content": "Added as a part of security scheme: bearer",
-                      "type": "text/plain"
-                    },
-                    "key": "Authorization",
-                    "value": "Bearer <token>"
+                    "key": "Content-Type",
+                    "value": "application/json"
                   },
                   {
                     "key": "Accept",
                     "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: bearer",
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
                   }
                 ],
-                "method": "POST",
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"command\": \"create_dataset\",\n  \"params\": {\n    \"name\": \"Customers List\",\n    \"solution_id\": \"sol_cv33u4n0i6q45p93i930\",\n    \"description\": \"Customers list\",\n    \"source\": \"https://example.com/dataset.csv\",\n    \"slug\": \"customers_list\"\n  }\n}",
+                  "raw": "{\n  \"params\": {\n    \"eu_bc2\": true,\n    \"proident_8\": 93251936.30576652\n  },\n  \"command\": \"update_solution\",\n  \"query\": \"list_workspaces\"\n}",
                   "options": {
                     "raw": {
+                      "headerFamily": "json",
                       "language": "json"
                     }
                   }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api"
+                  ]
                 }
               },
               "status": "Unauthorized",
               "code": 401,
+              "_postman_previewlanguage": "json",
               "header": [
                 {
                   "key": "Content-Type",
                   "value": "application/json"
                 }
               ],
-              "body": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"internal error\"\n  }\n}",
               "cookie": [],
-              "_postman_previewlanguage": "json"
+              "responseTime": null,
+              "body": "{\n  \"error\": {\n    \"code\": \"<integer>\",\n    \"message\": \"<string>\"\n  }\n}",
+              "createdAt": "2026-10-22T01:06:41.000Z",
+              "updatedAt": "2026-10-22T01:06:41.000Z",
+              "uid": "35240-a751129c-d387-4d0a-8434-17b2e7ad612b"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "createdAt": "2026-10-22T01:06:41.000Z",
+          "updatedAt": "2026-10-22T01:06:41.000Z",
+          "uid": "35240-94f0c239-0b5e-4181-833e-eebc98e5fd31"
         }
       ],
-      "event": []
-    }
-  ],
-  "event": [],
-  "variable": [
-    {
-      "type": "string",
-      "value": "https://app.polyteia.com",
-      "key": "baseUrl"
+      "id": "d6f285aa-728d-4831-9729-01d2c87a627f",
+      "createdAt": "2026-10-22T01:06:41.000Z",
+      "updatedAt": "2026-10-22T01:06:41.000Z",
+      "uid": "35240-d6f285aa-728d-4831-9729-01d2c87a627f"
     }
   ],
   "auth": {
@@ -175,17 +182,15 @@
     "bearer": [
       {
         "key": "token",
-        "value": "{{bearerToken}}"
+        "value": "{{bearerToken}}",
+        "type": "string"
       }
     ]
   },
-  "info": {
-    "_postman_id": "91415123-acfe-4cc1-b279-75766a5a357b",
-    "name": "Polyteia Platform Dataset Organization API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "Polyteia is a data platform for the German/European public sector. The platform can be fully driven through an RPC-style API: a single endpoint that accepts `command` (create/update/delete) and `query` (read) calls against Organizations, Workspaces, Solutions and Datasets. Authentication uses a Personal Access Key (PAK) presented as a Bearer token. All requests are POST to the single endpoint and return HTTP 200 with either a `data` or an `error` object (except auth failures, which return 401).\n\n\nContact Support:\n Name: Polyteia Support\n Email: security@polyteia.de",
-      "type": "text/plain"
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://app.polyteia.com"
     }
-  }
+  ]
 }
